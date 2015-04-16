@@ -1,7 +1,25 @@
 # JuliaHOPSPACK
 Work in progress to integrate a Julia standalone executable into HOPSPACK
 
-PROOF OF CONCEPT
+
+At the moment there is a trade-off to make. You can (with a little effort) write a Julia executable that runs very quickly but in practice you are limited to one HOPSPACK citizen. You can also have Julia evaluate a script which is slower per-call but also allows for an arbitrary number of citizens. Thus, until someone gets the executable to accept arguments directly from HOPSPACK the approach should depend on the problem/resources at hand. Notably, for most applications there will be a more difficult to implement but faster option (executable) and a low cost but slower option (no executable).
+
+NO EXECUTABLE:
+
+If simplicity is your preferred virtue the low cost way to integrate HOPSPACK (with any number of citizens) is write a batch file that launches the a new kernel. The quick way to make this work is to add the folder with the Julia executable to your path (on my machine this is "C:\Users\Nick\AppData\Local\Julia-0.3.5\bin") and look at the batch file in the no_executable folder for the gist of the procedure. The example is set up there for Flavio's example and two HOPSPACK citizens.
+
+As a comparison, this is not substantially slower for this problem but WILL become a problem if you like to use lots of "using ..." statements. Switching to "import" so NOT
+
+> using Distributions" 
+
+but
+
+> import Distributions  
+> Distributions.Normal
+
+will save a little bit of time. Notice the overall tradeoff here is that writing the executable will save run time for each calculation but potentially you can have any number of HOPSPACK citizens if running Julia as a new kernel. 
+
+USING EXECUTABLE:
 
 Everything you need to run Flavio's HOPSPACK example from class is located in the relevant folder. The example minimizes the function
 
