@@ -2,14 +2,19 @@
 Work in progress to integrate a Julia standalone executable into HOPSPACK
 
 
-# OVERVIEW
+## OVERVIEW
 
 At the moment there is a trade-off to make. You can (with a little effort) write a Julia executable that runs very quickly but in practice you are limited to one HOPSPACK citizen. You can also have Julia evaluate a script which is slower per-call but also allows for an arbitrary number of citizens. Thus, until someone gets the executable to accept arguments directly from HOPSPACK the approach should depend on the problem/resources at hand. Notably, for most applications there will be a more difficult to implement but faster option (executable) and a low cost but slower option (no executable).
+
+#### INDEX
+##### Without Executable
+##### With Executable
+##### Build your Own Executable
+##### KNOWN ISSUES and TODOs
 
 DISCLAIMER:
 
 This worked for me on Windows 8 with Julia v0.040-dev.
-
 
 ### NO EXECUTABLE:
 
