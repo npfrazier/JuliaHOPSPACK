@@ -9,7 +9,7 @@ At the moment there is a trade-off to make. You can (with a little effort) write
 INDEX
  * <a href="#noexec">Without Executable</a>
  * <a href="#exec">With Executable</a>
- * <a href="#buildexec">Build your Own Executable </a>
+ * <a href="#buildexec">Build your Own Executable</a>
  * <a href="#todo">Known Issues and TODOs</a>
 
 
