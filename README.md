@@ -7,7 +7,7 @@ Everything you need to run Flavio's HOPSPACK example from class is located in th
 
 > f(x) = sin(x/(  1+ sqrt( x*x^(1/3) ) )) 
 
-for x scalar. The global minimum is at -1. 
+for x scalar. The global minimum is at 1. 
 
 To run HOPSPACK use your command line to go to the directory with the content from Flavio_Example and type
 > HOPSPACK_main_serial hops_config.txt
