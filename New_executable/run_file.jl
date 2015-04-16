@@ -16,11 +16,8 @@ Pkg.update() # should be nothing to do
 using WinRPM
 WinRPM.install("gcc")
 
-
 ##### Second script
 ##### Make an executable
-
-
 
 # what you need:
 ## In one directory you should:
