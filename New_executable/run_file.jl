@@ -1,6 +1,7 @@
 
 
-#### Set up ability to build executables
+##### First script
+##### Set up ability to build executables
 
 # download julia for developers
 # http://julialang.org/downloads/#Nightly.builds
@@ -16,7 +17,8 @@ using WinRPM
 WinRPM.install("gcc")
 
 
-##### Make an actual executable
+##### Second script
+##### Make an executable
 
 
 

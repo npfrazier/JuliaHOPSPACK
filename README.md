@@ -1,7 +1,7 @@
 # JuliaHOPSPACK
 Work in progress to integrate a Julia standalone executable into HOPSPACK
 
-Everything you need to run Flavio's HOPSPACK example is located in the folder. The example minimizes the function
+Everything you need to run Flavio's HOPSPACK example from class is located in the relevant folder. The example minimizes the function
 
 > f(x) = sin(x/(  1+ sqrt( x*x^(1/3) ) )) 
 
@@ -35,7 +35,7 @@ TO RUN YOUR OWN FUNCTION:
 
 You will need to learn how to build a Julia executable. To run the file that does this you will have to use the developer ("bleeding edge") version of julia at "http://julialang.org/downloads/#Nightly.builds". The warnings are there for a reason. When I was first working on this problem I did crash Julia and had to re-load it.
 
-Then point yourself to "run-file.jl" here which has a code to get Julia v0.040 ready to run build-executable. More detail later.
+It is probably convenient to grab the contents of the new_executable folder which has an outline for completing the process. Open "run-file.jl" which has a first script to get Julia v0.040 ready to run build-executable and a second script that builds the executable. More details later.
 
 
 ONGOING/TODO:
