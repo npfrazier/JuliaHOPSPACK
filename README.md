@@ -1,5 +1,5 @@
 # JuliaHOPSPACK
-Work in progress to integrate a Julia standalone executable into HOPSPACK
+Work in progress to integrate a Julia standalone executable into HOPSPACK. Tested only on Windows 8.
 
 
 ## OVERVIEW
@@ -12,11 +12,9 @@ INDEX
  * <a href="#buildexec">Build your Own Executable</a>
  * <a href="#todo">Known Issues and TODOs</a>
 
-DISCLAIMER:
+ <a name="noexec"></a> 
 
-This worked for me on Windows 8 with Julia v0.040-dev.
-
-### NO EXECUTABLE: <a name="nonexec"></a> 
+### NO EXECUTABLE: 
 
 If simplicity is your preferred virtue the low cost way to integrate HOPSPACK (with any number of citizens) is write a batch file that launches the a new kernel. The quick way to make this work is to add the folder with the Julia executable to your path (on my machine this is "C:\Users\Nick\AppData\Local\Julia-0.3.5\bin") and look at the batch file in the no_executable folder for the gist of the procedure. The example is set up there for Flavio's example and two HOPSPACK citizens.
 
@@ -69,6 +67,7 @@ You will need to learn how to build a Julia executable. To run the file that doe
 
 It is probably convenient to grab the contents of the new_executable folder which has an outline for completing the process. Open "run-file.jl" which has a first script to get Julia v0.040 ready to run build-executable and a second script that builds the executable. More details later.  <a name="todo"></a> 
 
+DISCLAIMER: This worked for me on Windows 8 with Julia v0.040-dev.
 
 ## ONGOING/TODO:
 
