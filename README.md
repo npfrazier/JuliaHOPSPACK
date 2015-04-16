@@ -9,11 +9,11 @@ At the moment there is a trade-off to make. You can (with a little effort) write
 INDEX
  * <a href="#noexec">Without Executable</a>
  * <a href="#exec">With Executable</a>
- * <a href="#buildexec">Build your Own Executable</a>
+ * <a href="#buildexec">Build your Own Executable </a>
  * <a href="#todo">Known Issues and TODOs</a>
 
- <a name="noexec"></a> 
 
+ <a name="noexec"></a> 
 ### NO EXECUTABLE: 
 
 If simplicity is your preferred virtue the low cost way to integrate HOPSPACK (with any number of citizens) is write a batch file that launches the a new kernel. The quick way to make this work is to add the folder with the Julia executable to your path (on my machine this is "C:\Users\Nick\AppData\Local\Julia-0.3.5\bin") and look at the batch file in the no_executable folder for the gist of the procedure. The example is set up there for Flavio's example and two HOPSPACK citizens.
