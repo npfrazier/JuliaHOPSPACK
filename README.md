@@ -27,7 +27,7 @@ First notice that:
 - All the lib* files are required for the executable to run
 - "out_params.txt" and "in_params.txt" are used inside of "FlavioExample.bat" to communicate with the executable (see TODO below)
 
-If you have any questions about HOPSPACK I ask that you first read Section 5 of the manual "http://www.sandia.gov/hopspack/HopspackUserManual_2_0_2.pdf".
+If you have any questions about HOPSPACK I ask that you first read Section 5 of the manual <a href="http://www.sandia.gov/hopspack/HopspackUserManual_2_0_2.pdf">HOPSPACK documentation</a>.
 
 
 DISCLAIMER:
