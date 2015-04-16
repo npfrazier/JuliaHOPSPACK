@@ -4,7 +4,7 @@
 # ex: import Optim 
 #     Optim.optimize()
 
-dir = "C:\\Users\\Nick\\SkyDrive\\projects\\LaborEcon\\optimize\\test_out"
+dir = "C:\\Users\\Nick\\SkyDrive\\projects\\j_library\\juliahopspack\\no_executable"
 cd(dir)
 
 # ARGS stores any arguments passed to Julia through command line

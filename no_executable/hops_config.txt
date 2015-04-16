@@ -15,7 +15,7 @@
 
 @ "Evaluator"
   "Evaluator Type"  string "System Call"
-  "Executable Name" string "no_exec_flavio_example"
+  "Executable Name" string "no_exec_example"
   "Input Prefix"    string "infile"
   "Output Prefix"   string "outfile"
   "Debug Eval Worker" bool false          # True enables evaluator debug messages
@@ -24,7 +24,7 @@
 
 #-- SUBLIST OF MEDIATOR CONTROL PARAMETERS.       
 @ "Mediator"                                      
-    "Citizen Count"         int 2                         
+    "Citizen Count"         int 1                         
     "Number Processors"     int 1                   
     "Number Threads"        int 1                      
     "Maximum Evaluations"   int 100000000                
@@ -46,10 +46,4 @@
     "Step Tolerance" double 1e-6                  # (1e-2 ; > Cash Comp Tol) solution accuracy !!! 
     "Initial Step" double 1.00                    # (1.0) expected scaled distance(start,solution) 
 @@ 
-@ "Citizen 2"                                     
-    "Type" string "GSS"                           # Citizen name
-    "Contraction Factor" double 0.75
-    "Display" int 1                               # 0 = no debug info, 3 = most detail
-    "Step Tolerance" double 1e-6                  # (1e-2 ; > Cash Comp Tol) solution accuracy !!! 
-    "Initial Step" double 1.00                    # (1.0) expected scaled distance(start,solution) 
-@@
+

@@ -42,6 +42,7 @@ Everything you need to run Flavio's HOPSPACK example from class is located in th
 for x scalar. The global minimum is at 1. 
 
 To run HOPSPACK use your command line to go to the directory with the content from Flavio_Example and type
+
 > HOPSPACK_main_serial hops_config.txt
 
 The solution should output to "hops_pointout.txt". <a name="FAQ"></a> 
@@ -63,6 +64,8 @@ If you have any questions about HOPSPACK I ask that you first read Section 5 of 
 
 
 ## TO RUN YOUR OWN FUNCTION: 
+
+HAS TO BE BUILT ON COMPUTER TO RUN ON COMPUTER!
 
 You will need to learn how to build a Julia executable. To run the file that does this you will have to use the developer ("bleeding edge") version of julia at <a href="http://julialang.org/downloads/#Nightly.builds">Bleeding Edge Build</a>. The warnings are there for a reason. When I was first working on this problem I did crash Julia and had to re-load it.
 
