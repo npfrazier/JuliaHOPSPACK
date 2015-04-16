@@ -36,7 +36,7 @@ This worked for me on Windows 8 with Julia v0.040-dev.
 
 TO RUN YOUR OWN FUNCTION:
 
-You will need to learn how to build a Julia executable. To run the file that does this you will have to use the developer ("bleeding edge") version of julia at "http://julialang.org/downloads/#Nightly.builds". The warnings are there for a reason. When I was first working on this problem I did crash Julia and had to re-load it.
+You will need to learn how to build a Julia executable. To run the file that does this you will have to use the developer ("bleeding edge") version of julia at <a href="http://julialang.org/downloads/#Nightly.builds">Bleeding Edge Build</a>. The warnings are there for a reason. When I was first working on this problem I did crash Julia and had to re-load it.
 
 It is probably convenient to grab the contents of the new_executable folder which has an outline for completing the process. Open "run-file.jl" which has a first script to get Julia v0.040 ready to run build-executable and a second script that builds the executable. More details later.
 
