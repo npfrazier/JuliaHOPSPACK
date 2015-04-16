@@ -1,6 +1,7 @@
 # JuliaHOPSPACK
-Work in progress to integrate a Julia standalone executable into HOPSPACK. Tested only on Windows 8.
+Work in progress to integrate a Julia standalone executable into HOPSPACK. 
 
+Tested only on Windows 8.
 
 ## OVERVIEW
 
