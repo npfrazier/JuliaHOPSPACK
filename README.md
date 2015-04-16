@@ -31,7 +31,10 @@ but
 
 will save a little bit of time. Notice the overall tradeoff here is that writing the executable will save run time for each calculation but potentially you can have any number of HOPSPACK citizens if running Julia as a new kernel. 
 
-### USING EXECUTABLE: <a name="exec"></a> 
+<a name="exec"></a> 
+
+
+### USING EXECUTABLE: 
 
 Everything you need to run Flavio's HOPSPACK example from class is located in the relevant folder. The example minimizes the function
 
@@ -42,9 +45,9 @@ for x scalar. The global minimum is at 1.
 To run HOPSPACK use your command line to go to the directory with the content from Flavio_Example and type
 > HOPSPACK_main_serial hops_config.txt
 
-The solution should output to "hops_pointout.txt".
+The solution should output to "hops_pointout.txt". <a name="FAQ"></a> 
 
-QUESTIONS: <a name="FAQ"></a> 
+QUESTIONS: 
 
 First notice that:
 - "hops_config.txt" is the only paramerization file that would typically be adjusted by end-user
@@ -57,17 +60,17 @@ First notice that:
 - All the lib* files are required for the executable to run
 - "out_params.txt" and "in_params.txt" are used inside of "FlavioExample.bat" to communicate with the executable (see TODO below)
 
-If you have any questions about HOPSPACK I ask that you first read Section 5 of the manual <a href="http://www.sandia.gov/hopspack/HopspackUserManual_2_0_2.pdf">HOPSPACK documentation</a>.
+If you have any questions about HOPSPACK I ask that you first read Section 5 of the manual <a href="http://www.sandia.gov/hopspack/HopspackUserManual_2_0_2.pdf">HOPSPACK documentation</a>. <a name="buildexec"></a> 
 
 
-## TO RUN YOUR OWN FUNCTION: <a name="buildexec"></a> 
+## TO RUN YOUR OWN FUNCTION: 
 
 You will need to learn how to build a Julia executable. To run the file that does this you will have to use the developer ("bleeding edge") version of julia at <a href="http://julialang.org/downloads/#Nightly.builds">Bleeding Edge Build</a>. The warnings are there for a reason. When I was first working on this problem I did crash Julia and had to re-load it.
 
-It is probably convenient to grab the contents of the new_executable folder which has an outline for completing the process. Open "run-file.jl" which has a first script to get Julia v0.040 ready to run build-executable and a second script that builds the executable. More details later.
+It is probably convenient to grab the contents of the new_executable folder which has an outline for completing the process. Open "run-file.jl" which has a first script to get Julia v0.040 ready to run build-executable and a second script that builds the executable. More details later.  <a name="todo"></a> 
 
 
-## ONGOING/TODO: <a name="todo"></a> 
+## ONGOING/TODO:
 
 The largest hurdle is that only one citizen can safely run at a time. By safely I mean they may interfere with each other's work and unknowingly duplicate search. This problem arises from the Julia executable being unable to process arguments so I have to write a wrapper around the executable that stores the unique FID in (from HOPSPACK) to a common "in_params.txt" file for executable processing and then take the output stored in the common "out_params.txt" and have the wrapper rename it for HOPSPACK processing.
 
