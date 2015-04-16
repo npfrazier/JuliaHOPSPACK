@@ -11,6 +11,7 @@ for x scalar. The global minimum is at -1.
 
 To run HOPSPACK use your command line to go to the directory with the content from Flavio_Example and type
 > HOPSPACK_main_serial hops_config.txt
+
 The solution should output to "hops_pointout.txt".
 
 QUESTIONS: 
