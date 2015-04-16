@@ -15,7 +15,7 @@
 
 @ "Evaluator"
   "Evaluator Type"  string "System Call"
-  "Executable Name" string "jink"
+  "Executable Name" string "no_exec_flavio_example"
   "Input Prefix"    string "infile"
   "Output Prefix"   string "outfile"
   "Debug Eval Worker" bool false          # True enables evaluator debug messages
