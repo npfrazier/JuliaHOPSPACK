@@ -6,7 +6,7 @@ Tested only on Windows 8.
 ## OVERVIEW
 
 At the moment there is a trade-off to make. You can (with a little effort) write a Julia executable that runs very quickly but in practice you are limited to one HOPSPACK citizen. You can also have Julia evaluate a script which is slower per-call but also allows for an arbitrary number of citizens. Thus, until someone gets the executable to accept arguments directly from HOPSPACK the approach should depend on the problem/resources at hand. Notably, for most applications there will be a more difficult to implement but faster option (executable) and a low cost but slower option (no executable).
-
+ <a name="noexec"></a> 
 #### QUICK INDEX
  * <a href="#noexec">Without Executable</a>
  * <a href="#exec">With Executable</a>
@@ -15,7 +15,7 @@ At the moment there is a trade-off to make. You can (with a little effort) write
 
 
 
- <a name="noexec"></a> ### NO EXECUTABLE: 
+### NO EXECUTABLE: 
 
 If simplicity is your preferred virtue the low cost way to integrate HOPSPACK (with any number of citizens) is write a batch file that launches the a new kernel. The quick way to make this work is to add the folder with the Julia executable to your path (on my machine this is "C:\Users\Nick\AppData\Local\Julia-0.3.5\bin") and look at the batch file in the no_executable folder for the gist of the procedure. The example is set up there for Flavio's example and two HOPSPACK citizens.
 
