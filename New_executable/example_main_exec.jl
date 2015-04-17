@@ -23,8 +23,7 @@ function main()
 	# run obj function
 	objfct1 = []
 	try
-		aux    = sqrt(theta[1]*(theta[1]^(1.0/3.0)))
-		objfct1 = sin(theta[1])/(1.0+aux)
+		objfct1 = gratituous_sub_function(theta[1])
 	catch
 		objfct1 = "DNE"
 	end
@@ -62,4 +61,9 @@ function main()
 	### always return 0!
 	# put any error messages in first line of out_params (or "DNE" if only one value if undefined)
 	return 0
+end
+
+function gratituous_sub_function(x::Float64)
+		aux    = sqrt(x*(x^(1.0/3.0)))
+		objfct1 = sin(x)/(1.0+aux)
 end

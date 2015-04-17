@@ -4,12 +4,18 @@
 # ex: import Optim 
 #     Optim.optimize()
 
-dir = "C:\\Users\\Nick\\SkyDrive\\projects\\j_library\\juliahopspack\\no_executable"
-cd(dir)
+
+# The batch file will pass the following arguments 
+# IN_FILE = ARGS[1]   
+# OUT_FILE = ARGS[2]   
+# LocalDirectory - Where to expect in_file and out_file
 
 # ARGS stores any arguments passed to Julia through command line
-file_in = ARGS[1]
+file_in  = ARGS[1]
 file_out = ARGS[2]
+localdir = ARGS[3]
+
+cd(localdir)
 
 # rest of program is identical
 
@@ -63,6 +69,3 @@ end
 fid_out = open(file_out, "w")
 writedlm(fid_out, out_vec',"\r\n")
 close(fid_out)
-
-### always return 0!
-# put any error messages in first line of out_params (or "DNE" if only one value if undefined)
