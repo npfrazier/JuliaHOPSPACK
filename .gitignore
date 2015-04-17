@@ -4,7 +4,10 @@ no_executable/fromhops.txt
 no_executable/infile*
 Flavio_example/
 new_executable\exec\infile*
-new_executable\exec\lib*
-new_executable\exec\MakeItSo*
+new_executable\exec\MakeItSo-debug.exe
+new_executable\exec\MakeItSo.exe
 new_executable\exec\7z.dll
 new_executable\exec\zlib1.dll
+*.dll
+*.ji
+*.exe
