@@ -7,7 +7,7 @@ Tested only on Windows 8.
 
 As you might expect there is a choice to be made.
 
-I see two ready-to-implement strategies for running HOPSPACK. For quick reference I provide a bullet point summary here and a more detailed discussion below. All code in the repo is set up to run the <a href="#example">example problem</a>.
+I see two ready-to-implement strategies for running HOPSPACK. One requires building an executable and one does not. For quick reference I provide a bullet point summary and a more detailed discussion below. All code in the repo is set up to run the <a href="#example">example problem</a>.
 
 #### QUICK INDEX
  * <a href="#qdiscuss">Quick Discussion</a>
