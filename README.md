@@ -9,6 +9,16 @@ As you might expect there is a choice to be made.
 
 I see two ready-to-implement strategies for running HOPSPACK. For quick reference I provide a bullet point summary here and a more detailed discussion below. All code in the repo is set up to run the <a href="#example">example problem</a>.
 
+#### QUICK INDEX
+ * <a href="#qdiscuss">Quick Discussion</a>
+ * <a href="#discuss">Longer Discussion</a>
+ * <a href="#hops">Install HOPSPACK</a>
+ * <a href="#noexec">Without Executable</a>
+ * <a href="#exec">With Executable</a>
+ * <a href="#example">Example Problem</a>
+ * <a href="#todo">Known Issues and TODOs</a>
+ <a name="qdiscuss"></a> 
+
 ### QUICK DISCUSSION
 
 #### No Executable
@@ -24,17 +34,7 @@ I see two ready-to-implement strategies for running HOPSPACK. For quick referenc
  * Requires using Julia v0.4.0 to build executable
  * De-bugging requires re-building executable
  * Permits only one citizen
-
-
-#### QUICK INDEX
- * <a href="#discuss">Discussion: Exec or No Exec</a>
- * <a href="#hops">Install HOPSPACK</a>
- * <a href="#noexec">Without Executable</a>
- * <a href="#exec">With Executable</a>
- * <a href="#example">Example Problem</a>
- * <a href="#todo">Known Issues and TODOs</a>
- <a name="discuss"></a> 
-
+<a name="discuss"></a> 
 
 ### DISCUSSION: EXEC OR NO EXEC
 
