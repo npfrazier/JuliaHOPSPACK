@@ -33,9 +33,10 @@ end
 ### Calculate values
 # Replace with "DNE" as value if undefined
 # run obj function
+
 objfct1 = []
 try
-	aux    = sqrt(theta[1]*(theta[1]^(1.0/3.0)))
+	aux    = sqrt(theta[1]*( sign(theta[1])*abs(theta[1])^(1.0/3.0)))
 	objfct1 = sin(theta[1])/(1.0+aux)
 catch
 	objfct1 = "DNE"

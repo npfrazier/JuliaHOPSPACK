@@ -2,6 +2,7 @@ no_executable/HOPSPACK_main_serial.exe
 no_executable/tohops.txt
 no_executable/fromhops.txt
 no_executable/infile*
+no_executable/hops_config_local.txt
 new_executable\exec\infile*
 *.dll
 *.ji
