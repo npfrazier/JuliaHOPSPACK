@@ -64,6 +64,6 @@ function main()
 end
 
 function gratituous_sub_function(x::Float64)
-	aux    = sqrt(x*( sign(x)*abs(x)^(1.0/3.0)))
+	aux    = sqrt(x*real( x^(1.0/3.0) ) )
 	objfct1 = sin(x)/(1.0+aux)
 end

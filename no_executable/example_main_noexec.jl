@@ -36,7 +36,7 @@ end
 
 objfct1 = []
 try
-	aux    = sqrt(theta[1]*( sign(theta[1])*abs(theta[1])^(1.0/3.0)))
+	aux    = sqrt( theta[1]*real( theta[1]^(1.0/3.0) ) )
 	objfct1 = sin(theta[1])/(1.0+aux)
 catch
 	objfct1 = "DNE"
